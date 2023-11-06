@@ -1,0 +1,77 @@
+About: A tool for making hypothetical tropical cyclone tracks (WIP)
+
+v20221224a:
+    * Reverted color schemes following wikipedia consensus (or lack thereof)
+        > "Legacy" colors now the primary color scheme
+        > Checkbox now toggles alternate colors (the now reverted 2022 Wikipedia colors which never got used in tracks)
+v20220923a:
+    * Legacy colors now enabled by default to match the Wikipedia status quo
+v20220803a:
+    + Added saving/loading of seasons
+    + Added autosave
+    % Using Dexie.js
+v20220320a:
+    * Colors updated to match new Wikipedia storm colors
+        > Legacy colors can be toggled with a checkbox or keyboard shortcut "l"
+v20220215a:
+    + Added button to modify selected track point
+    * Dedicated CSS file in place of JS-defined styles
+v20220208a:
+    * Better track rendering
+        > Dots no longer disappear when halfway off the edge of the viewer
+        > Dots and lines display correctly when wrapping around the world map
+v20220207b:
+    + Selected tracks now include a selected dot
+        > New points added relative to the selected dot
+        > Dot must be selected to be moved
+v20220207a:
+    + Added checkbox to toggle track point deletion mode
+        > Keyboard shortcut: "q"
+        > Shift-click no longer does anything special
+    * Single track mode button replaced with checkbox
+    * Deselect track button and single track mode checkbox greyed out when appropriate
+v20220205b:
+    * Fixed placement of "Select Category" dropdown
+    * Dropdowns now display correct value after using keyboard shortcuts
+v20220205a:
+    + Added GUI
+        > for changing category
+        > for changing dot type
+        > for deselecting tracks
+        > for single track mode
+v20220131a:
+    + Added grey color for unknown strength cyclones
+        > Press "u" to select
+    * Better sizes for subtropical squares, extratropical triangles, and track line
+    % Credit to Reno-Rex (a.k.a. Hypercane) for this update
+v20220130a:
+    + Added mode for viewing a single track
+        > Press "h" with a track selected to enter this mode and hide all other tracks
+        > Disabled by pressing "h" again or by deselecting track
+    * Selected track and hovered tracks now highlighted
+        > Highlight disabled in single track view mode
+    * Tracks can now be deselected by pressing space
+        > New tracks now created by clicking anywhere without any tracks selected
+        > Control-click no longer does anything special
+    - Removed white bar with "TEST" from the map viewer
+v20210111a:
+    * Map can now be panned beyond the International Date Line (allowing for crossover tracks)
+    * Better map resolution when fully zoomed in
+v20200418a:
+    + Support for multiple tracks added
+        > Control-click to begin a new track
+        > New points added to the end of the selected track
+        > Move or delete a point from a track to select it
+    + Subtropical and extratropical points added
+        > Press "t" to select tropical (circle) for new points
+        > Press "b" to select subtropical (square)
+        > Press "x" to select extratropical (triangle)
+v20200417a:
+    + Added the ability to place, move, and delete track points
+        > Press "d", "s", "1", "2", "3", "4", or "5" to select track point color
+        > Click anywhere to place a new track point
+        > Click and drag an existing point to move it
+        > Shift-click a point to delete it
+        > Currently only supports a single storm's track
+v20200405a:
+    + Added pannable and zoomable map
